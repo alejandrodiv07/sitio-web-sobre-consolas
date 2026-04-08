@@ -1,0 +1,423 @@
+/* Google Fonts Typography Styles */
+/* Force Google Fonts application */
+body {
+	font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI",
+		sans-serif !important;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+	font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI",
+		sans-serif !important;
+}
+.navbar-brand,
+.nav-link,
+.btn {
+	font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI",
+		sans-serif !important;
+}
+/* Define font variables for easy switching */
+:root {
+	--font-primary: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI",
+		sans-serif;
+	--font-secondary: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI",
+		sans-serif;
+	--font-body: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI",
+		sans-serif;
+}
+
+/* General typography */
+body {
+	font-family: var(--font-body) !important;
+	font-weight: 400;
+	line-height: 1.6;
+	color: #2c3e50;
+	background-color: #f8f9fa;
+	margin: 0;
+	padding: 0;
+}
+
+/* Force font application over Bootstrap */
+*,
+*::before,
+*::after {
+	font-family: inherit;
+}
+
+/* Headings with Inter font */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+	font-family: var(--font-primary) !important;
+	font-weight: 600;
+	line-height: 1.2;
+	margin-bottom: 0.75rem;
+	color: #2c3e50;
+}
+
+h1,
+.h1 {
+	font-size: 2.5rem;
+	font-weight: 700;
+}
+
+h2,
+.h2 {
+	font-size: 2rem;
+	font-weight: 600;
+}
+
+h3,
+.h3 {
+	font-size: 1.5rem;
+	font-weight: 600;
+}
+
+h4,
+.h4 {
+	font-size: 1.25rem;
+	font-weight: 500;
+}
+
+h5,
+.h5 {
+	font-size: 1rem;
+	font-weight: 500;
+}
+
+h6,
+.h6 {
+	font-size: 0.875rem;
+	font-weight: 500;
+}
+
+/* Navigation and brand with Poppins */
+.navbar-brand,
+.nav-link,
+.btn {
+	font-family: var(--font-secondary) !important;
+	font-weight: 500;
+}
+
+.navbar-brand {
+	font-size: 1.5rem;
+	font-weight: 600;
+}
+
+/* Layout containers */
+#container {
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+}
+
+#header {
+	background-color: #fff;
+	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+	position: sticky;
+	top: 0;
+	z-index: 1000;
+}
+
+#content {
+	flex: 1;
+	padding: 2rem;
+	max-width: 1200px;
+	margin: 0 auto;
+	width: 100%;
+	box-sizing: border-box;
+}
+
+#footer {
+	background-color: #2c3e50;
+	color: white;
+	padding: 2rem 0;
+	text-align: center;
+	margin-top: auto;
+}
+
+/* Typography utilities */
+.font-primary {
+	font-family: var(--font-primary) !important;
+}
+
+.font-secondary {
+	font-family: var(--font-secondary) !important;
+}
+
+.font-body {
+	font-family: var(--font-body) !important;
+}
+
+.fw-light {
+	font-weight: 300 !important;
+}
+
+.fw-normal {
+	font-weight: 400 !important;
+}
+
+.fw-medium {
+	font-weight: 500 !important;
+}
+
+.fw-semibold {
+	font-weight: 600 !important;
+}
+
+.fw-bold {
+	font-weight: 700 !important;
+}
+
+/* Cards and components */
+.card {
+	border: none;
+	border-radius: 12px;
+	box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+	margin-bottom: 1.5rem;
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+	transform: translateY(-2px);
+	box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+}
+
+.card-title {
+	font-family: var(--font-primary);
+	font-weight: 600;
+	font-size: 1.25rem;
+}
+
+.card-text {
+	font-family: var(--font-body);
+	font-weight: 400;
+	line-height: 1.6;
+}
+
+/* Buttons with modern typography */
+.btn {
+	border-radius: 8px;
+	padding: 0.75rem 1.5rem;
+	font-weight: 500;
+	text-decoration: none;
+	display: inline-block;
+	border: none;
+	cursor: pointer;
+	transition: all 0.3s ease;
+	font-size: 0.95rem;
+}
+
+.btn-primary {
+	background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+	color: white;
+}
+
+.btn-primary:hover {
+	transform: translateY(-2px);
+	box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+}
+
+.btn-secondary {
+	background-color: #6c757d;
+	color: white;
+}
+
+.btn-success {
+	background: linear-gradient(135deg, #56ab2f 0%, #a8e6cf 100%);
+	color: white;
+}
+
+.btn-danger {
+	background: linear-gradient(135deg, #ff416c 0%, #ff4b2b 100%);
+	color: white;
+}
+
+/* Navigation styles */
+.nav-pills .nav-link {
+	border-radius: 25px;
+	padding: 0.5rem 1rem;
+	margin: 0 0.25rem;
+	transition: all 0.3s ease;
+}
+
+.nav-pills .nav-link:hover {
+	background-color: rgba(102, 126, 234, 0.1);
+	color: #667eea;
+}
+
+/* Form elements */
+.form-control {
+	border-radius: 8px;
+	border: 2px solid #e9ecef;
+	padding: 0.75rem 1rem;
+	font-family: var(--font-body);
+	transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-control:focus {
+	border-color: #667eea;
+	box-shadow: 0 0 0 0.2rem rgba(102, 126, 234, 0.25);
+}
+
+.form-label {
+	font-family: var(--font-secondary);
+	font-weight: 500;
+	color: #495057;
+	margin-bottom: 0.5rem;
+}
+
+/* Alert styles */
+.alert {
+	padding: 1rem 1.25rem;
+	margin-bottom: 1rem;
+	border: none;
+	border-radius: 10px;
+	font-family: var(--font-body);
+}
+
+.alert-success {
+	background: linear-gradient(135deg, #d4edda 0%, #c3e6cb 100%);
+	color: #155724;
+}
+
+.alert-danger {
+	background: linear-gradient(135deg, #f8d7da 0%, #f5c6cb 100%);
+	color: #721c24;
+}
+
+.alert-warning {
+	background: linear-gradient(135deg, #fff3cd 0%, #ffeaa7 100%);
+	color: #856404;
+}
+
+.alert-info {
+	background: linear-gradient(135deg, #d1ecf1 0%, #bee5eb 100%);
+	color: #0c5460;
+}
+
+/* Table styles */
+.table {
+	font-family: var(--font-body);
+}
+
+.table thead th {
+	font-family: var(--font-secondary);
+	font-weight: 600;
+	background-color: #f8f9fa;
+	border-bottom: 2px solid #dee2e6;
+	color: #495057;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+	#content {
+		padding: 1rem;
+	}
+
+	h1,
+	.h1 {
+		font-size: 2rem;
+	}
+
+	h2,
+	.h2 {
+		font-size: 1.5rem;
+	}
+
+	.btn {
+		padding: 0.6rem 1.2rem;
+		font-size: 0.9rem;
+	}
+
+	.navbar-brand {
+		font-size: 1.25rem;
+	}
+}
+
+@media (max-width: 576px) {
+	h1,
+	.h1 {
+		font-size: 1.75rem;
+	}
+
+	h2,
+	.h2 {
+		font-size: 1.25rem;
+	}
+
+	#content {
+		padding: 0.75rem;
+	}
+}
+
+/* Utility classes for typography */
+.text-gradient {
+	background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-clip: text;
+}
+
+.text-shadow {
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Loading and animation utilities */
+.fade-in {
+	animation: fadeIn 0.6s ease-in-out;
+}
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+		transform: translateY(20px);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+/* Print styles */
+@media print {
+	body {
+		font-family: "Times New Roman", serif;
+		font-size: 12pt;
+		line-height: 1.4;
+	}
+
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		font-family: "Times New Roman", serif;
+		page-break-after: avoid;
+	}
+
+	.btn,
+	.nav,
+	.navbar {
+		display: none !important;
+	}
+}

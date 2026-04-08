@@ -1,0 +1,119 @@
+/* Gaming Theme CSS */
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;500;600;700&family=Exo+2:wght@300;400;500;600;700;800&display=swap");
+
+/* Tipografías base */
+body {
+	font-family: "Rajdhani", sans-serif;
+	background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+/* Headers gaming */
+.gaming-header {
+	font-family: "Orbitron", monospace;
+	text-shadow: 0 0 20px rgba(102, 126, 234, 0.5);
+}
+
+/* Cards mejoradas */
+.card {
+	transition: all 0.3s ease;
+	border: none;
+	box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+.card:hover {
+	transform: translateY(-10px);
+	box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+}
+
+/* Botones gaming */
+.btn-gaming {
+	background: linear-gradient(45deg, #667eea, #764ba2);
+	border: none;
+	color: white;
+	transition: all 0.3s ease;
+}
+
+.btn-gaming:hover {
+	transform: translateY(-2px);
+	box-shadow: 0 10px 20px rgba(102, 126, 234, 0.3);
+	color: white;
+}
+
+/* Sección de consolas */
+.console-section {
+	background: linear-gradient(
+		135deg,
+		rgba(255, 255, 255, 0.1) 0%,
+		rgba(255, 255, 255, 0.05) 100%
+	);
+	backdrop-filter: blur(10px);
+}
+
+/* Precios estilizados */
+.price-tag {
+	font-family: "Exo 2", sans-serif;
+	font-weight: 700;
+}
+
+/* Smooth scroll */
+html {
+	scroll-behavior: smooth;
+}
+
+section[id] {
+	scroll-margin-top: 100px;
+}
+
+/* Enlaces de navegación gaming */
+.nav-link {
+	transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+	transform: translateY(-2px);
+	text-shadow: 0 0 10px rgba(102, 126, 234, 0.5);
+}
+
+/* Badges gaming */
+.badge {
+	font-family: "Exo 2", sans-serif;
+}
+
+/* Efectos de hover para imágenes */
+.card-img-top {
+	transition: all 0.3s ease;
+}
+
+.card:hover .card-img-top {
+	transform: scale(1.05);
+}
+
+/* Footer gaming */
+footer .gaming-header {
+	font-size: 0.9rem;
+}
+
+/* Carousel mejorado */
+.carousel-item img {
+	filter: brightness(0.8);
+	transition: all 0.3s ease;
+}
+
+.carousel-item.active img {
+	filter: brightness(1);
+}
+
+/* Animaciones sutiles */
+@keyframes glow {
+	0%,
+	100% {
+		text-shadow: 0 0 20px rgba(102, 126, 234, 0.5);
+	}
+	50% {
+		text-shadow: 0 0 30px rgba(102, 126, 234, 0.8);
+	}
+}
+
+.gaming-header:hover {
+	animation: glow 2s infinite;
+}
